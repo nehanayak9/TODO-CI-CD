@@ -124,3 +124,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# settings.py
+
+ALLOWED_HOSTS = [
+    # Add other hostnames and IP addresses as needed
+    '52.87.167.37',
+]
+
