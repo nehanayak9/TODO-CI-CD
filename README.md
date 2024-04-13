@@ -25,16 +25,16 @@ Alright, let's get started with setting up AWS EC2 and hosting our Python websit
     - if you use default VPC then you can skip the points from 1 to 4
     - directly start from point 5 - Launching EC2
 
-5. Launching our EC2 Instance:
+# 5. Launching our EC2 Instance:
 -	I'll choose the appropriate Amazon Machine Image (AMI) for our EC2 instance, ensuring it aligns with the requirements of hosting our Python website.
 -	Selecting the right instance type ensures we have the necessary computational power and memory for our application.
 -	Configuring security groups properly ensures our instance is protected from unauthorized access while allowing legitimate traffic.
 
-6. Connecting to our EC2 Instance:
+# 6. Connecting to our EC2 Instance:
 -	Using SSH or RDP, we'll establish a secure connection to our EC2 instance, making sure to use the key pairs for authentication.
 -	Secure access management is essential to prevent any security breaches or unauthorized access.
 
-7. Hosting our Python Website:
+# 7. Hosting our Python Website:
 -	With our EC2 instance up and running, we'll deploy our Python website onto it, taking advantage of its scalability and network performance.
 -	Cloning our website repository from GitHub ensures smooth deployment and easy updates.
 -	Configuring web servers like Ubantu allows us to serve our Python website efficiently.
@@ -59,12 +59,12 @@ Alright, let's get started with setting up AWS EC2 and hosting our Python websit
 
 9.  python3 manage.py runserver
 
-8. Adding Extra Services (e.g., EBS):
+# 8. Adding Extra Services (e.g., EBS):
 -	I'll integrate Elastic Block Store (EBS) to provide reliable storage for our EC2 instance, ensuring our data persists even if the instance is terminated.
 -	Attaching additional EBS volumes allows us to scale our storage capacity based on our growing data needs.
 -	Leveraging EBS snapshots provides an added layer of data protection and allows for easy backups and recovery.
 
-Comments for EBS :
+# Comments for EBS :
 -	df -h
 -	sudo mkfs -t  ext3 /dev/sdf
 -	sudo mkdir /mnt/data-store
@@ -80,7 +80,7 @@ Comments for EBS :
 -	ls /mnt/data-store 
 -	cat /mnt/data-store/file.txtf
 
-create snapshot
+# create snapshot
 -	-for backup data for data volume
 
 By following these steps and leveraging the right AWS services, I can set up our EC2 instance, host our Python website, and ensure it runs smoothly with the additional services we need.
